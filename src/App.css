@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-food-img {
+    background-image: url("/public/images/food-hero-bg-free-img.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-fitter {
+    background: rgba(0, 0, 0, 0.15);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    height: 100%;
+    width: 100%;
+}
+
+.Height {
+    height: calc(100vh - 100px);
+}
+
+
+.curve-font {
+    font-family: 'Yesteryear', handwriting;
+}
+
+.col-anim {
+    animation: up-down 0.9s ease-in forwards;
+}
+
+.curv-font {
+    font-family: Yesteryear;
+}
+
+.dot-border {
+    border-bottom: 2px dotted #f0eeee;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.food-first-bg {
+    background-image: url("/public/images/food-first-templet.jpg");
+    height: 70vh;
+    width: 97%;
+    background-size: contain;
+    background-position: center;
+}
+
+.bg-temp-fitter {
+    background: rgba(0, 0, 0, 0.42);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    height: 100%;
+    width: 100%;
+}
+
+.food-product {
+    background: rgba(0, 0, 0, 0.266);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    height: 100%;
+    width: 100%;
+}
+
+.first-food {
+    background-image: url("/public/images/paneer_butter_masala.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.second-food {
+    background-image: url("/public/images/dal_tadaka.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.third-food {
+    background-image: url("/public/images/pav_bhaji.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.food_footer {
+    background-image: url("/public/images/food_footer-cta-bg.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-filter {
+    background: rgba(255, 255, 255, 0.433);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.325);
+    height: 100%;
+    width: 100%;
+}
+
+.header-anim {
+    transform: translateY(0);
+    /* height: 98px; */
+    animation: up-down ease-in forwards 0.75s;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.headding-anim {
+    transform: translateY(0);
+    animation: bounce ease-in-out forwards 2s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-500px);
+    }
+
+    50% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #eb5058;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555555ab;
+}
+
+
+@media (max-width: 1000px) {
+
+    .height-width {
+        width: 180px;
+        object-fit: cover;
+    }
+
+    .food-wraper {
+        flex-wrap: wrap !important;
+    }
+
+}
